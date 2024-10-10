@@ -1,12 +1,19 @@
 :root {
+  /* Define as fontes que o site usará. Inter, Avenir, Helvetica, Arial são tipos de letras. */
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* Define a altura da linha do texto para 1.5 (espaçamento entre linhas) */
   line-height: 1.5;
+  /* Define o peso da fonte para 400, que é o peso "normal" */
   font-weight: 400;
 
+  /* Ajusta as cores para modo claro e escuro */
   color-scheme: light dark;
+  /* Define a cor do texto (meio branco) */
   color: rgba(255, 255, 255, 0.87);
+  /* Define a cor de fundo (meio preta) */
   background-color: #242424;
 
+  /* Faz alguns ajustes na maneira como a fonte é exibida para melhorar a legibilidade */
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -14,90 +21,133 @@
 }
 
 a {
+  /* Define o peso da fonte dos links para 500, ou seja, um pouco mais grosso */
   font-weight: 500;
+  /* Define a cor dos links como um tom de azul */
   color: #646cff;
+  /* Mantém a decoração do link (como sublinhado) */
   text-decoration: inherit;
 }
 a:hover {
+  /* Muda a cor do link quando você passa o mouse sobre ele */
   color: #535bf2;
 }
 
 body {
+  /* Remove as margens padrão do corpo do site */
   margin: 0;
+  /* Usa Flexbox para alinhar conteúdo */
   display: flex;
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center; /* Centraliza verticalmente */
+  /* Centraliza o conteúdo horizontalmente */
+  justify-content: center;
+  /* Centraliza o conteúdo verticalmente */
+  align-items: center;
+  /* Define uma largura mínima de 320px */
   min-width: 320px;
+  /* Define uma altura mínima igual à altura da janela */
   min-height: 100vh;
 }
 
 h1 {
+  /* Define o tamanho da fonte dos títulos (h1) */
   font-size: 3.2em;
+  /* Define a altura da linha dos títulos */
   line-height: 1.1;
 }
 
 button {
+  /* Deixa os botões com bordas arredondadas */
   border-radius: 8px;
+  /* Define uma borda invisível padrão para os botões */
   border: 1px solid transparent;
+  /* Adiciona espaço dentro dos botões */
   padding: 0.6em 1.2em;
+  /* Define o tamanho da fonte dos botões */
   font-size: 1em;
+  /* Define o peso da fonte dos botões */
   font-weight: 500;
+  /* Usa a mesma fonte do site */
   font-family: inherit;
+  /* Define a cor de fundo dos botões (quase preta) */
   background-color: #1a1a1a;
+  /* Muda o cursor do mouse para uma mãozinha ao passar sobre os botões */
   cursor: pointer;
+  /* Adiciona uma transição suave na cor da borda ao passar o mouse */
   transition: border-color 0.25s;
 }
 button:hover {
+  /* Muda a cor da borda dos botões ao passar o mouse */
   border-color: #646cff;
 }
 button:focus,
 button:focus-visible {
+  /* Adiciona uma borda de destaque ao focar nos botões */
   outline: 4px auto -webkit-focus-ring-color;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
+    /* Define as cores para quando o site estiver no modo claro */
     color: #213547;
     background-color: #ffffff;
   }
   a:hover {
+    /* Muda a cor dos links no modo claro ao passar o mouse */
     color: #747bff;
   }
   button {
+    /* Define a cor de fundo dos botões no modo claro */
     background-color: #f9f9f9;
   }
 }
 
 * {
+  /* Define as fontes padrão para todo o site */
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /* Remove margens e padding padrão */
   margin: 0;
   padding: 0;
 }
 
 .pokemon li {
+  /* Faz com que os itens de uma lista de Pokémon se alinhem em linha */
   display: flex;
+  /* Centraliza verticalmente os itens na lista */
   align-items: center;
+  /* Espaça os itens da lista de Pokémon */
   justify-content: space-between;
+  /* Adiciona um espaço acima de cada item da lista */
   margin-top: 1rem;
+  /* Adiciona um espaço à direita de cada item da lista */
   margin-right: 1rem;
 }
 
 .stat + .stat {
-  margin-top: .5rem;
+  /* Adiciona espaço entre os elementos de estatísticas */
+  margin-top: 0.5rem;
 }
 
 .app {
+  /* Usa Flexbox para o contêiner principal */
   display: flex;
+  /* Adiciona espaço entre os elementos */
   gap: 2rem;
+  /* Adiciona padding ao contêiner */
   padding: 1rem;
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center; /* Centraliza verticalmente */
-  height: 100%; /* Garante que o contêiner ocupe a altura total da tela */
+  /* Centraliza horizontalmente o contêiner */
+  justify-content: center;
+  /* Centraliza verticalmente o contêiner */
+  align-items: center;
+  /* Faz o contêiner ocupar toda a altura da tela */
+  height: 100%;
 }
 
 .pokemon {
+  /* Define a altura e largura da seção de Pokémon */
   height: 30rem;
   width: 20rem;
+  /* Permite rolagem vertical */
   overflow-y: scroll;
-  margin: auto; /* Centraliza dentro do contêiner */
+  /* Centraliza dentro do contêiner principal */
+  margin: auto;
 }

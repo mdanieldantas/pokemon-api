@@ -4,7 +4,7 @@ Pokemon Api é uma aplicação web desenvolvida com React que consome a API de P
 
 ## Demonstração
 
-![Exemplo de Pokémon]("./public/pokemon-api.png")
+![Exemplo de Pokémon]("./public/image.png")
 
 ## Funcionalidades
 
